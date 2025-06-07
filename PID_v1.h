@@ -46,6 +46,7 @@ class PID {
                                        //   the PID calculation is performed.  default is 100
     double GetIntegralSum();
     void SetIntegralSum(double);
+    void ResetIntegralSum();
 
     // Display functions ****************************************************************
     double GetKp();      // These functions query the pid for interal values.

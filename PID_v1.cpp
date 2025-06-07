@@ -219,3 +219,4 @@ int PID::GetMode() { return inAuto ? AUTOMATIC : MANUAL; }
 int PID::GetDirection() { return controllerDirection; }
 double PID::GetIntegralSum() { return outputSum; }
 void PID::SetIntegralSum(double Value) { outputSum = Value; }
+void PID::ResetIntegralSum() { SetIntegralSum(0.0); }
