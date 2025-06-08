@@ -22,10 +22,10 @@ class PID {
 
     void SetMode(int Mode);  // * sets PID to either Manual (0) or Auto (non-0)
 
-    bool Compute(bool);  // * performs the PID calculation.  it should be
-                         //   called every time loop() cycles. ON/OFF and
-                         //   calculation frequency can be set using SetMode
-                         //   SetSampleTime respectively
+    bool Compute(bool Force = false);  // * performs the PID calculation.  it should be
+                                       //   called every time loop() cycles. ON/OFF and
+                                       //   calculation frequency can be set using SetMode
+                                       //   SetSampleTime respectively
 
     void SetOutputLimits(double, double);  // * clamps the output to a specific range. 0-255 by default, but
                                            //   it's likely the user will want to change this depending on
